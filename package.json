@@ -1,0 +1,17 @@
+{
+  "name": "dev-ops-node",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon -r esm src/index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^6.2.0",
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "esm": "^3.2.0",
+    "nodemon": "^1.18.9"
+  }
+}
