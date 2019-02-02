@@ -11,5 +11,9 @@ app.get('/health-check', (req, res) => {
 app.get('/api/homes', (req, res) => {
    res.json([{ id: 1, name: 'home', address: '14 myroad' }, { id: 2, name: 'work', address: '121 high street' }])
 })
+app.get('/api/homes/:id', (req, res) => {
+   const id = req.params.id;
+   res.send(id)
+ })
 
 export default app
